@@ -1,66 +1,96 @@
 html,
 body,
-div { 
+div {
     margin: 0px;
     padding: 0px;
     outline: 1px solid black;
     display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
-html, body { 
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-h1, h2 { 
+h1,
+h2 {
     text-align: center;
 }
 
-#controls { 
-    width: 20%;
-    height: 5%;
-    margin-left: 37.5%;
-    padding-left: 5%;
+#main {
+    text-align: center;
+    background-image: url(/images/supermarketbackground.png);
 }
 
-#grocery { 
+#controls {
+    height: 10%;
+}
+
+#grocery {
     height: 75%;
     margin-top: 0.5%;
+    width: 20%;
+    font-size: 22px;
 }
-#list { 
+
+#list {
     width: 33%;
-    height: 80%;   
+    height: 80%;
     margin-left: 33%;
     display: flex;
     flex-direction: column;
     align-content: space-between;
 }
 
-.groceryItem { 
+.groceryItem {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 10%;
+    font-size: 32px;
 }
 
-.itemText { 
+.itemText {
     width: 60%;
-    text-align: center;
-    font-size: 24px;
-}
-.numBoxes { 
-    width: 20%;
-    text-align: center;
-    font-size: 24px;
+    background-color: lightblue;
 }
 
-.arrowBoxes { 
-    width: 20%;
-    text-align: center;
-    font-size: 24px;
+.numBoxes,
+.buttonBoxes {
+    width: 10%;
+    height: 100%;
+    background-color: cornflowerblue;
 }
 
-.arrowButtons { 
+.numBoxes {
+    width: 20%;
+}
+
+.buttonBoxes {
+    width: 20%;
+    font-size: 0px;
+}
+
+.arrowButtons {
     width: 100%;
+    font-size: 14px;
+    padding-bottom: 5%;
+}
+
+#header {
+    width: 33%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 33%;
+    background: rgb(195, 189, 193);
+    background: linear-gradient(0deg, rgba(195, 189, 193, 1) 0%, rgba(137, 182, 215, 1) 51%);
+}
+
+#logo {
+    height: 100%;
 }
